@@ -5,6 +5,33 @@ class RegistrationScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+        appBar: AppBar(),
+        body: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            //   mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+
+            children: [
+              Text("SignUp"),
+              TextFormField(
+                decoration: InputDecoration(
+                  label: Text("Username"),
+                ),
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                  label: Text("Username"),
+                ),
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                  label: Text("Username"),
+                ),
+              )
+            ],
+          ),
+        ));
   }
 }
